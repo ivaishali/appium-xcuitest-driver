@@ -136,7 +136,7 @@ async function initSession (caps) {
       wdaLocalPort: WDA_PORT,
     }, caps);
   }
-
+console.log(caps); // eslint-disable-line
   const serverRes = await driver.init(caps);
   if (!caps.udid && !caps.fullReset && serverRes[1].udid) {
     caps.udid = serverRes[1].udid;

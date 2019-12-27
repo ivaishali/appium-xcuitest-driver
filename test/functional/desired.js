@@ -166,8 +166,16 @@ let TVOS_CAPS = _.defaults({
   deviceName: 'Apple TV'
 }, GENERIC_CAPS);
 
+
+const FLUTTER_CAPS = _.defaults({
+  automationName: 'flutter',
+  platformVersion: '13.0',
+  deviceName: 'iPhone X Simulator',
+  app: 'https://github.com/imurchie/rando/raw/master/startup_namer.app.zip',
+}, GENERIC_CAPS);
+
 export {
   UICATALOG_CAPS, UICATALOG_SIM_CAPS, SAFARI_CAPS, TESTAPP_CAPS,
   PLATFORM_VERSION, TOUCHIDAPP_CAPS, DEVICE_NAME, W3C_CAPS, SETTINGS_CAPS,
-  TVOS_CAPS, MULTIPLE_APPS
+  TVOS_CAPS, MULTIPLE_APPS, FLUTTER_CAPS
 };
